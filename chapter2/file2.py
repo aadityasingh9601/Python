@@ -16,7 +16,7 @@ print(c % d)
 
 num = input("enter number -> ")
 
-print(int(num) * int(num))
+print(num + num)
 
 num1 = 66
 num2 = 77
