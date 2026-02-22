@@ -1,4 +1,5 @@
-# Strings are immutable in Python
+# Strings are immutable in Python. Whenever you apply any string method on a string, a new string is returned because
+# Strings are immutable.
 
 str = "asian Elephant" 
 
