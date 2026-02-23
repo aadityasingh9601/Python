@@ -4,7 +4,7 @@
 
 fruits = ["apple","mango","litchi"]
 
-print(fruits)
+print(type(fruits))
 
 mylist = [43,1,6,38, 0]
 randomList = ["fruits",33, True]
