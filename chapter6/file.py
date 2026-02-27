@@ -55,9 +55,9 @@ else:
     print("no it's not present")
 
 
-post = "This is a post about an nimal"
+post = input("enter your post")
 
-if(post.index("animal")):
-    print("Yes, it's about animal")
+if ("Animal".lower() in post.lower()):
+    print("Yes, it's talking about animal!")
 else:
-    print("No, it's not about animal")
+    print("No, it's not talking about animal!")
