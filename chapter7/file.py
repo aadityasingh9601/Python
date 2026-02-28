@@ -45,14 +45,6 @@ while n <= 100:
 
 print(sum)
 
-# See from video & implement the solution.
-# number = int(input("enter your number -> "))
-
-# if(number <= 1):
-#     print("It's not an prime number")
-# elif (number == 2 or (number % 2) != 0):
-#     print("It's a prime number")
-
 i = 1
 
 while i <=3:
@@ -79,3 +71,11 @@ for c in range(1,n+1):
         print("*",end="")
     
     print()
+
+# See from video & implement the solution.
+# number = int(input("enter your number -> "))
+
+# if(number <= 1):
+#     print("It's not an prime number")
+# elif (number == 2 or (number % 2) != 0):
+#     print("It's a prime number")
