@@ -72,10 +72,14 @@ for c in range(1,n+1):
     
     print()
 
-# See from video & implement the solution.
-# number = int(input("enter your number -> "))
+# Check if number is prime or not.
+# Prime number -> Number which divides by 1 or itself.
 
-# if(number <= 1):
-#     print("It's not an prime number")
-# elif (number == 2 or (number % 2) != 0):
-#     print("It's a prime number")
+n = int(input("Enter your number -> "))
+
+for i in range(2,n):
+    if (n % i == 0):
+        print("No, it's not a prime number!")
+        break
+else:
+    print("Yes, it's a prime number!")
