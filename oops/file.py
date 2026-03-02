@@ -2,8 +2,8 @@
 # This concept focuses on using reusable code (DRY Principle). 
 
 class Employee:
-    company = "Amazon" # Each object would have the same value.
-
+    # This is a class attribute, each object would have the same value. (Can be changed later after object instantiation)
+    company = "Amazon"
     # Class methods are bound to the class itself & not to the object
     @classmethod
     def add(cls,a,b):
@@ -21,19 +21,27 @@ class Employee:
         return "Hello, boss!"
     
     # Create a method to get salary.
+    # We also need to accept the argument here using "self"
     def getSalary(self):
         return self.salary
+    # Here using "self" is just a convention, because it's descriptive, you can also use something else instead of this.
+    # Like any name of your choice. See example below.
+    def greet2(random):
+        return "Good evening!"
+    def getInfo(abc123):
+        return f"The company name is {abc123.company}"
     
 # Create your object.
 firstEmployee = Employee("monster",10000)
 print(firstEmployee.add(1,2))
-
-print(firstEmployee.company)
-firstEmployee.company = "Google"
-print(firstEmployee.company)
-print(firstEmployee.name)
-print(firstEmployee.getSalary())
+print(firstEmployee.company) 
+firstEmployee.company = "Google" # Changing class attribute
+firstEmployee.age = "30" # This is an instance attribute
+print(firstEmployee.age)
+print(firstEmployee.getSalary()) # Internally it converts into firstEmployee.getSalary(firstEmployee)
 print(firstEmployee.greet())
+print(firstEmployee.greet2())
+print(firstEmployee.getInfo())
 
 class Calculator:
     @staticmethod
