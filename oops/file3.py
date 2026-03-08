@@ -45,13 +45,18 @@ class Complex:
     def __init__(self,a,b):
         self.a = a
         self.b = b
-        return self.a + self.b * 'i'
 
     # Overload the add & mul method.
     def __add__(self, num):
-        return self.a + num.a + self.b + num.b
+        return Complex(self.a + num.a, self.b + num.b)
     
     def __mul__(self, num):
-        return (self.a * num.a) + ( (self.a * num.b) + (self.b * num.a) ) - (self.b * num.b)
+        return Complex((self.a * num.a) +  - (self.b * num.b),((self.a * num.b) + (self.b * num.a)))
     
-
+    def __str__(self):
+        return f"{self.a} + {self.b}i"
+    
+c1 = Complex(1,3)
+c2 = Complex(4,5)
+print(c1+c2)
+print(c1 * c2)
